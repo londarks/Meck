@@ -29,43 +29,48 @@ websocket will be responsible for making the communications between the client a
 
 - when the user logs in for the first time, the system automatically creates a location for him, where he will store his data within the system and based on this location it is possible to know how much space the user is spending
 
- - Inside the dictionary will have some keys where only the server can access it, preventing these data without the necessary credentials from being exposed
+- Inside the dictionary will have some keys where only the server can access it, preventing these data without the necessary credentials from being exposed
 
-##Rotes
+- whenever it is necessary to upload a file and it is necessary to pass to the api where the file must be placed, inside the root directory or inside some sub folder that the user creates
+
+### Rotes
 ```
 end Point: /api/create/
-Args: eamil and name password HASH
-Response: return id item removed 
+Args: eamil and username  password -> HASH
+Response: sucess create
 ```
 
 ```
 end Point: /api/login/
-Args: JWT Token
+Args: Email and Password
 Response: return JWT Token 
 ```
 
 ```
-end Point: /api/auth/
-Args: Email and Password
-Response: verify your JWT token
-```
-
-```
-end Point: /api/upload/
+end Point: /client/
 Args: JWT Token
-Response: return id item upload 
+Response: verify your JWT token  and acess Websocket
 ```
 
 ```
-end Point: /api/remove/
-Args: JWT Token and id item
+end Point: upload
+name:        upload,      -> name for upload
+media_type:  image/jpeg,  -> file name
+total_bytes: imageBytes,  -> size file
+media :      base64,      -> decode and generation file
+if size  => 1000000 == 1GB not acept upload
+```
+
+```
+end Point: remove
+Args: name of item to be deleted
 Response: return id item removed 
 ```
 
 ## Token (JWT) 
 token will be used as user registration within the dictionary so after login the user will receive a safe token and with the parameters inside the token and it is possible to identify the user
 
-- will have a routine that checks the last access and after 48H it deletes the dictionary item.
+- the token is valid for 4 weeks, after which it becomes useless and a new login is required
 
 - All other information is optional, and this is where the magic happens. We can inform anything in it and based on that information that authentication systems are able to identify the user. The most common is to inform the user ID.
 
