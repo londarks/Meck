@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="269"
+   height="56"
+   viewBox="0 0 269 56"
+   fill="none"
+   version="1.1"
+   id="svg2550"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2552"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="5.3234201"
+     inkscape:cx="134.59392"
+     inkscape:cy="28.08345"
+     inkscape:window-width="1920"
+     inkscape:window-height="1051"
+     inkscape:window-x="1911"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2550" />
+  <path
+     d="M61.114 2.77686L76.3225 50.1304C77.1517 52.7123 75.2258 55.3535 72.5141 55.3535H61.3307C59.5879 55.3535 58.0457 54.2251 57.5183 52.5641L42.4827 5.21052C41.6637 2.63121 43.5889 0 46.2951 0H57.3056C59.0435 0 60.5826 1.12219 61.114 2.77686Z"
+     fill="#EF305E"
+     id="path2518" />
+  <g
+     filter="url(#filter0_i)"
+     id="g2524">
+    <path
+       d="M46.5485 37.8L35.8243 3.44919C35.1837 1.39729 33.2837 0 31.1341 0C28.5177 0 26.3602 2.05036 26.227 4.66341L24.9187 30.3392C24.8723 31.2511 24.9823 32.1643 25.244 33.0391L31.0656 52.4999C31.5722 54.1934 33.1302 55.3535 34.8978 55.3535H40.3093C42.0503 55.3535 43.5914 54.2274 44.1203 52.5686L46.5267 45.0214C47.2752 42.6736 47.2828 40.1523 46.5485 37.8Z"
+       fill="#F4F4F4"
+       id="path2520" />
+    <path
+       d="M46.5485 37.8L35.8243 3.44919C35.1837 1.39729 33.2837 0 31.1341 0C28.5177 0 26.3602 2.05036 26.227 4.66341L24.9187 30.3392C24.8723 31.2511 24.9823 32.1643 25.244 33.0391L31.0656 52.4999C31.5722 54.1934 33.1302 55.3535 34.8978 55.3535H40.3093C42.0503 55.3535 43.5914 54.2274 44.1203 52.5686L46.5267 45.0214C47.2752 42.6736 47.2828 40.1523 46.5485 37.8Z"
+       fill="url(#paint0_linear)"
+       id="path2522" />
+  </g>
+  <path
+     d="M20.317 0H31.3316C34.0288 0 35.9529 2.61489 35.1505 5.18995L20.2695 52.9475C19.7487 54.619 18.2014 55.7576 16.4506 55.7576H5.43606C2.73888 55.7576 0.814784 53.1427 1.61716 50.5676L16.4981 2.81005C17.019 1.13856 18.5663 0 20.317 0Z"
+     fill="#EF305E"
+     id="path2526" />
+  <defs
+     id="defs2548">
+    <rect
+       x="82.277933"
+       y="5.6354749"
+       width="177.89316"
+       height="47.15014"
+       id="rect6684" />
+    <filter
+       id="filter0_i"
+       x="24.9083"
+       y="0"
+       width="22.1854"
+       height="55.3535"
+       filterUnits="userSpaceOnUse"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         flood-opacity="0"
+         result="BackgroundImageFix"
+         id="feFlood2528" />
+      <feBlend
+         mode="normal"
+         in="SourceGraphic"
+         in2="BackgroundImageFix"
+         result="shape"
+         id="feBlend2530" />
+      <feColorMatrix
+         in="SourceAlpha"
+         type="matrix"
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+         result="hardAlpha"
+         id="feColorMatrix2532" />
+      <feOffset
+         dx="-4"
+         dy="3"
+         id="feOffset2534" />
+      <feComposite
+         in2="hardAlpha"
+         operator="arithmetic"
+         k2="-1"
+         k3="1"
+         id="feComposite2536" />
+      <feColorMatrix
+         type="matrix"
+         values="0 0 0 0 0.904167 0 0 0 0 0.892865 0 0 0 0 0.892865 0 0 0 0.4 0"
+         id="feColorMatrix2538" />
+      <feBlend
+         mode="normal"
+         in2="shape"
+         result="effect1_innerShadow"
+         id="feBlend2540" />
+    </filter>
+    <linearGradient
+       id="paint0_linear"
+       x1="29"
+       y1="24.5"
+       x2="49"
+       y2="30.5"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-opacity="0.2"
+         id="stop2543" />
+      <stop
+         offset="0.911458"
+         stop-color="white"
+         stop-opacity="0"
+         id="stop2545" />
+    </linearGradient>
+  </defs>
+  <text
+     xml:space="preserve"
+     id="text6682"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'Rockwell Extra Bold';-inkscape-font-specification:'Rockwell Extra Bold, ';white-space:pre;shape-inside:url(#rect6684);fill:#ececec;fill-opacity:1;stroke:none"
+     transform="matrix(1.1061696,0,0,1.1935589,-9.4772322,-6.1729791)"><tspan
+       x="82.277344"
+       y="41.16731"
+       id="tspan72222"><tspan
+         style="fill:#0d2451"
+         id="tspan72220">MECK</tspan></tspan></text>
+</svg>
