@@ -1,0 +1,16 @@
+{
+  "name": "Meck",
+  "version": "1.0.0",
+  "description": "Meck and the API responsible for storing the files on the servers It is also responsible for authenticating and validating new users.",
+  "main": "index.js",
+  "repository": "https://github.com/londarks/Meck",
+  "author": "Londarks",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0",
+    "ws": "^8.8.1"
+  }
+}
