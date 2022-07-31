@@ -2,7 +2,7 @@
 *.egg-info
 build/
 dist/
-node_modules/
 .env
 venv/
+node_modules
 __pycache__/

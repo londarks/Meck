@@ -28,5 +28,5 @@ class MeckWebserver {
 
   
 // inicializador
-const server = new MeckWebserver();
-server.pooling();
+// const server = new MeckWebserver();
+// server.pooling();
