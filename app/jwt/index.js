@@ -1,9 +1,15 @@
-var jwt = require('jsonwebtoken');
-var token = jwt.sign({ foo: 'bar' }, 'shhhhh', { algorithm: 'HS256'});
-console.log(token)
+class JWT {
+    constructor(app){
+        this.jwt = require('jsonwebtoken');
+        this.key = 'AAAAAAAAAAAAAAA'
+    };
 
-// class Jwt {
-//     constructor(app){
-//         this.app = app;
-//     }
-//   module.exports = Jwt // 👈 Export class
+    generation_token(){
+        const token = jwt.sign({ foo: 'bar' }, this.key, { algorithm: 'HS256'});
+        console.log(token)
+        return token
+
+    }
+  }
+  
+  module.exports = JWT // 👈 Export class

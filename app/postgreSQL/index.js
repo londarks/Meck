@@ -1,24 +1,34 @@
-const { Client } = require('pg')
 
-const client = new Client({
-  user: process.env.PGUSER,
-  host: '127.0.0.1',
-  database: process.env.PGDATABASE,
-  password: process.env.PGPASSWORD,
-  port: 5432,
-})
+class PostgreSQL {
+  constructor(){
+      const { Client } = require('pg')
+      this.client = new Client({
+        user: process.env.PGUSER,
+        host: '127.0.0.1',
+        database: process.env.PGDATABASE,
+        password: process.env.PGPASSWORD,
+        port: 5432,
+      });
+      this.client.connect();
+  }
 
-client.connect()
+  create(query){
+    //
+  }
 
+  delet(query){
+    //
+  }
 
-client.query("SELECT * FROM usuarios WHERE email='admin@gmail.com'", (err, res) => {
-    if(Object.keys(res['rows']).length){
-        console.log(res['rows'])
-    }
-    else{
-        //User not found
-        console.log('nao achei nada')
-    }
-    client.end()
-  })
+  update(query){
+    //
+  }
+
+  read(query){
+    return this.client.query(query)
+  };
+
+}
+
+module.exports = PostgreSQL // 👈 Export class
   

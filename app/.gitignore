@@ -1,8 +1,0 @@
-*.db
-*.egg-info
-build/
-dist/
-.env
-venv/
-node_modules
-__pycache__/
