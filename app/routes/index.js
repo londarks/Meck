@@ -21,7 +21,6 @@ class Routes {
         return cipher.final(this.DATA_ENCRYPTOGRAPH.type);
     };
 
-
     main(){
         this.app.post('/api/login', (req, res) => {
             const book = req.body;
@@ -30,15 +29,11 @@ class Routes {
             if(book['email'] != undefined && book['password'] != undefined){
                 const password_hash  = this.encrypt(book['password'])
                 this.postgresql.read("SELECT * FROM usuarios WHERE email='"+book['email']+"'").then(response => {
-                    //console.log(book['email']);
-                    //console.log(password_hash);
-                    //console.log(response['rows'][0]['password'])
                     if(Object.keys(response['rows']).length){
-                        //console.log(response['rows'])
                         if (response['rows'][0]['password'] == password_hash){
-
+                            let bearer = this.jwt.generation_token(response['rows'][0]['id'])
                             res.json({'message': 'login sucess'
-                                      ,'bearer': 'xxxxxxx'})
+                                      ,'bearer': bearer})
                         }
                         else{
                             res.json({'message': 'password is invalid'})
@@ -49,6 +44,7 @@ class Routes {
                     }
                 })   // <-- callback de sucesso
                 .catch(erro => {
+                    console.log(erro)
                     res.json({'message': 'Error email or password is invalid'});
                 });  // <-- callback de erro
             }
